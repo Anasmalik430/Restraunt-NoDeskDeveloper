@@ -9,6 +9,11 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+/AGENTS.md
+/CLAUDE.md
+/GEMINI.md
+/OPENAI.md
+/ANTHROPIC.md
 
 # testing
 /coverage
