@@ -38,7 +38,7 @@ const Featured = () => {
   const featuredDishes = siteData.menu.slice(0, 3);
 
   return (
-    <section ref={featuredRef} className="py-32 bg-secondary/20 px-6">
+    <section ref={featuredRef} className="py-32 bg-secondary/20 px-6 overflow-x-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center mb-32 space-y-6">
           <p className="text-primary font-bold tracking-[0.4em] uppercase text-[10px]">Chef's Selection</p>

@@ -15,7 +15,7 @@ const About = () => {
     let ctx = gsap.context(() => {
       // Image Safe Parallax
       gsap.to(".about-img", {
-        y: "20%",
+        y: "0%",
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -55,7 +55,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="story" ref={sectionRef} className="py-32 pb-12 bg-secondary/30 px-6">
+    <section id="story" ref={sectionRef} className="py-32 pb-12 bg-secondary/30 px-6 overflow-x-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Imaging Column */}
@@ -74,7 +74,7 @@ const About = () => {
           <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl z-0" />
           <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-accent/5 rounded-full blur-3xl z-0" />
           
-          <div className="legacy-badge absolute -bottom-12 -left-8 bg-white p-10 rounded-3xl shadow-2xl z-20 border border-black/5">
+          <div className="legacy-badge absolute -bottom-12 -left-4 md:-left-8 bg-white p-10 rounded-3xl shadow-2xl z-20 border border-black/5">
              <span className="text-4xl font-serif text-accent block mb-2 tracking-tighter">25+</span>
              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">Years of Legacy</span>
           </div>
