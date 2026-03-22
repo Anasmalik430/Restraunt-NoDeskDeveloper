@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata = {
-  title: "Alibaba | The Golden Kitchen",
+  title: "ALADDIN | The Golden Kitchen",
   description: "Expereince the best food in Roorkee",
 };
 

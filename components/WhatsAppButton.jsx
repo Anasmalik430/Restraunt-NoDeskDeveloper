@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const WhatsAppButton = () => {
   const phoneNumber = siteData.brand.contact.phone.replace(/\D/g, '');
-  const waLink = `https://wa.me/${phoneNumber}?text=Hello%20Alibaba%20Bistro,%20I%20would%20like%20to%20make%20a%20reservation.`;
+  const waLink = `https://wa.me/${phoneNumber}?text=Hello%20${siteData?.brand?.name}%20Bistro,%20I%20would%20like%20to%20make%20a%20reservation.`;
 
   return (
     <Link 

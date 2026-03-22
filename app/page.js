@@ -7,7 +7,6 @@ import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import Reservation from "@/components/Reservation";
 import ContactInfo from "@/components/ContactInfo";
-import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -20,6 +19,7 @@ const Home = () => {
       <Testimonials />
       <Reservation />
       <ContactInfo />
+      
     </div>
   );
 };

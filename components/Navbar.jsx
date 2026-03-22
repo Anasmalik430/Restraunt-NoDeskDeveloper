@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { siteData } from '@/data/siteData';
 import { Menu, X, Phone, ShoppingBag, Utensils } from 'lucide-react';
+import { useLenis } from 'lenis/react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const lenis = useLenis();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +16,22 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Lock scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      lenis?.stop();
+    } else {
+      document.body.style.overflow = '';
+      lenis?.start();
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+      lenis?.start();
+    };
+  }, [isOpen, lenis]);
 
   const navLinks = [
     { name: 'Home', href: '#home' },

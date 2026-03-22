@@ -26,7 +26,7 @@ const Reservation = () => {
           {/* Information & Ambience Side */}
           <div className="w-full lg:w-1/2 relative min-h-[400px]">
             <img 
-              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2074&auto=format&fit=crop" 
+              src="/reservation-banner.webp" 
               alt="Reservation Background"
               className="absolute inset-0 w-full h-full object-cover"
             />

@@ -55,34 +55,32 @@ const Hero = () => {
       {/* Background Layer - Verified Reliability */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop" 
-          alt="Alibaba Signature Interior"
+          src="/hero-banner.webp" 
+          alt="Aladdin Signature Interior"
           className="hero-bg-img h-[120%] w-full object-cover -top-[10%] relative origin-top"
         />
-        {/* Layered Cinematic Overlays */}
-        {/* Ivory Gradient Overlay - Ensuring Left-Aligned Contrast */}
-        <div className="absolute inset-0 bg-linear-to-r from-white/95 via-white/80 to-transparent z-10 hidden lg:block" />
-        {/* Mobile Centralized Overlay */}
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px] z-10 lg:hidden" />
-        
-        {/* Global Soft Vignette */}
-        <div className="absolute inset-0 bg-linear-to-t from-white/40 via-transparent to-transparent z-10" />
+        {/* Layered Cinematic Overlays for Centralized Text */}
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-[3px] md:bg-white/60 md:backdrop-blur-[2px] z-10" />
+        {/* Subtle vignette for deeper contrast in center */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.4)_100%)] z-10 hidden md:block" />
+        <div className="absolute inset-0 bg-linear-to-t from-white via-white/20 to-transparent z-10" />
       </div>
 
       {/* Main Content Area */}
-      <div className="relative z-20 h-full max-w-7xl mx-auto px-8 md:px-12 flex flex-col justify-end pb-32 md:pb-40">
+      <div className="relative z-20 h-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center items-center text-center pt-20">
         
-        <div className="max-w-3xl space-y-10">
+        <div className="max-w-4xl flex flex-col items-center space-y-10">
           
-          <div className="space-y-6">
-            <div className="hero-tagline flex items-center gap-4">
-              <div className="w-10 h-px bg-primary" />
+          <div className="space-y-6 flex flex-col items-center">
+            <div className="hero-tagline flex items-center justify-center gap-4">
+              <div className="w-8 md:w-16 h-px bg-primary opacity-50" />
               <p className="text-primary font-bold tracking-[0.5em] md:tracking-[0.8em] uppercase text-[9px] md:text-xs font-['Outfit']">
                 {siteData.brand.tagline}
               </p>
+              <div className="w-8 md:w-16 h-px bg-primary opacity-50" />
             </div>
             
-            <h1 className="hero-title flex flex-wrap text-6xl sm:text-8xl md:text-[10rem] font-serif font-black leading-[0.85] text-accent tracking-tighter antialiased">
+            <h1 className="hero-title flex flex-wrap justify-center text-6xl sm:text-8xl md:text-[10rem] font-serif font-black leading-[0.85] text-accent tracking-tighter antialiased">
               {renderTitleChars(siteData.brand.name)}
             </h1>
           </div>
@@ -90,11 +88,11 @@ const Hero = () => {
 
 
 
-          <p className="hero-slogan text-accent/70 text-sm md:text-xl font-medium font-['Outfit'] max-w-xl leading-relaxed italic border-l-4 border-primary/20 pl-8">
+          <p className="hero-slogan text-accent/80 text-sm md:text-xl font-medium font-['Outfit'] max-w-2xl leading-relaxed italic mx-auto">
             "{siteData.brand.slogan}. Serving heritage flavors in Uttarakhand's most iconic sanctuary."
           </p>
 
-          <div className="hero-buttons flex flex-col sm:flex-row items-center gap-6 pt-4">
+          <div className="hero-buttons flex flex-col sm:flex-row items-center justify-center gap-6 pt-4 w-full sm:w-auto">
             <a 
               href="#menu"
               className="group w-full sm:w-auto px-12 py-5 bg-accent text-white font-['Outfit'] font-bold uppercase tracking-[0.4em] text-[10px] hover:bg-primary transition-all duration-500 rounded-xl flex items-center justify-center gap-3 shadow-2xl hover:shadow-primary/20"
@@ -112,7 +110,7 @@ const Hero = () => {
           </div>
 
           {/* Quick Metrics */}
-          <div className="hero-metrics flex flex-wrap items-center gap-12 pt-12 opacity-60">
+          <div className="hero-metrics flex flex-wrap items-center justify-center gap-8 md:gap-16 pt-8 md:pt-12 opacity-80">
              <div className="flex items-center gap-3">
                 <Star size={16} className="text-primary fill-primary" />
                 <div className="flex flex-col">

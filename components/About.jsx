@@ -61,7 +61,7 @@ const About = () => {
         <div className="w-full lg:w-1/2 relative group">
           <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1954&auto=format&fit=crop" 
+              src="/about-img.webp" 
               alt="Heritage Chef"
               className="about-img w-full h-[600px] object-cover scale-[1.25] origin-top transition-transform duration-1000 group-hover:scale-[1.3]"
             />
@@ -88,7 +88,7 @@ const About = () => {
 
           <div className="story-elem space-y-8 text-accent/70 text-lg leading-relaxed font-medium">
             <p className="max-w-xl">
-               Since 1998, Alibaba has been more than a restraunt. It's a sanctuary where heritage spices meet modern techniques to create "Golden Plate" experiences.
+               Since 1998, Aladdin has been more than a restraunt. It's a sanctuary where heritage spices meet modern techniques to create "Golden Plate" experiences.
             </p>
             <p className="max-w-lg italic font-serif">
                "{siteData.brand.chef.bio}"
@@ -98,7 +98,7 @@ const About = () => {
           <div className="story-elem flex items-center gap-6 pt-6">
              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20">
                 <img 
-                   src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1968&auto=format&fit=crop" 
+                   src="/chef-avatar.webp" 
                    alt="Chef Kabir" 
                    className="w-full h-full object-cover grayscale"
                 />
