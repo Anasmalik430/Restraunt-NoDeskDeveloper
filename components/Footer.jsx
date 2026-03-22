@@ -75,14 +75,14 @@ const Footer = () => {
           <div className="footer-col space-y-8">
             <h4 className="text-white font-bold uppercase tracking-[0.4em] text-[10px]">Reservations</h4>
             <div className="space-y-4 text-white/40 text-sm font-medium">
-               <div className="flex items-center gap-3">
+               <Link href={`tel:${siteData.brand.contact.phone}`} className="flex items-center gap-3">
                   <Phone size={14} className="text-primary" />
                   <p>{siteData.brand.contact.phone}</p>
-               </div>
-               <div className="flex items-center gap-3">
+               </Link>
+               <Link href={`mailto:${siteData.brand.contact.email}`} className="flex items-center gap-3">
                   <Mail size={14} className="text-primary" />
                   <p>{siteData.brand.contact.email}</p>
-               </div>
+               </Link>
                <div className="flex items-center gap-3">
                   <MapPin size={14} className="text-primary" />
                   <p className="italic font-serif">{siteData.brand.location.city}</p>

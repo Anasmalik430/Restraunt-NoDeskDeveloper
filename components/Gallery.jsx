@@ -33,17 +33,12 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section id="gallery" ref={galleryRef} className="py-32 pb-8 bg-white px-6">
+    <section id="gallery" ref={galleryRef} className="py-32 pb-6 bg-white px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-          <div className="space-y-6">
-            <p className="text-primary font-bold tracking-[0.4em] uppercase text-[10px]">The Visual Soul</p>
-            <h2 className="text-5xl md:text-7xl font-serif text-accent italic leading-tight">Ambiance Gallery</h2>
-          </div>
-          <p className="text-accent/40 text-sm md:text-base font-medium italic group cursor-pointer hover:text-primary transition-colors">
-            Showcasing the intersection of culinary art and architectural elegance.
-          </p>
-        </div>
+       <div className="review-elem max-w-7xl mx-auto px-6 mb-24 text-center">
+        <p className="text-primary font-bold tracking-[0.4em] uppercase mb-4 text-[10px]">The Visual Soul</p>
+        <h2 className="text-5xl md:text-7xl font-serif text-accent italic">Ambiance Gallery</h2>
+      </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-none md:grid-rows-3 gap-8 h-auto lg:h-[1200px]">
 

@@ -35,15 +35,10 @@ const Menu = () => {
   return (
     <section id="menu" ref={menuRef} className="py-32 bg-white px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-          <div className="space-y-6">
-            <p className="text-primary font-bold tracking-[0.4em] uppercase text-[10px]">Culinary Masterpieces</p>
-            <h2 className="text-5xl md:text-7xl font-serif text-accent italic leading-tight">Signature Offerings</h2>
-          </div>
-          <p className="text-accent/40 text-sm md:text-base font-medium max-w-sm italic">
-            Curated selection of our most celebrated dishes, perfected over two decades.
-          </p>
-        </div>
+         <div className="review-elem max-w-7xl mx-auto px-6 mb-24 text-center">
+        <p className="text-primary font-bold tracking-[0.4em] uppercase mb-4 text-[10px]">Culinary Masterpieces</p>
+        <h2 className="text-5xl md:text-7xl font-serif text-accent italic">Signature Offerings</h2>
+      </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {siteData.menu.map((dish) => (

@@ -72,11 +72,13 @@ const Navbar = () => {
           }`}
         >
           {/* Logo Section */}
-          <a href="#home" className="flex flex-col cursor-pointer group relative z-110">
-            <span className={`text-2xl md:text-3xl font-serif font-black tracking-tighter leading-none transition-colors duration-500 ${scrolled ? 'text-accent' : 'text-accent'}`}>
+          <a href="#home" className="flex flex-col justify-center cursor-pointer group relative z-110">
+            <span className={`text-2xl md:text-3xl font-serif font-black tracking-tighter leading-none transition-all duration-500 text-accent`}>
               {siteData.brand.name}
             </span>
-            <span className="text-[9px] tracking-[0.4em] text-primary uppercase font-black opacity-80 mt-1">
+            <span className={`text-[9px] tracking-[0.4em] text-primary uppercase font-black transition-all duration-500 overflow-hidden hidden md:block ${
+              scrolled ? 'max-h-0 opacity-0 mt-0' : 'max-h-4 opacity-80 mt-1'
+            }`}>
               {siteData.brand.subtitle}
             </span>
           </a>

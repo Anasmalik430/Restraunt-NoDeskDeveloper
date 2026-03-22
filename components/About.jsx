@@ -65,6 +65,7 @@ const About = () => {
               src="/about-img.webp" 
               width={1080}
               height={960}
+              loading="eager"
               alt="Heritage Chef"
               className="about-img w-full h-[600px] object-cover scale-[1.25] origin-top transition-transform duration-1000 group-hover:scale-[1.3]"
             />
