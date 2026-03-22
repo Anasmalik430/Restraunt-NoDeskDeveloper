@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { siteData } from '@/data/siteData';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,8 +61,10 @@ const About = () => {
         {/* Imaging Column */}
         <div className="w-full lg:w-1/2 relative group">
           <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
-            <img 
+            <Image 
               src="/about-img.webp" 
+              width={1080}
+              height={960}
               alt="Heritage Chef"
               className="about-img w-full h-[600px] object-cover scale-[1.25] origin-top transition-transform duration-1000 group-hover:scale-[1.3]"
             />
@@ -97,8 +100,10 @@ const About = () => {
 
           <div className="story-elem flex items-center gap-6 pt-6">
              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20">
-                <img 
+                <Image 
                    src="/chef-avatar.webp" 
+                   width={1080}
+                   height={960}
                    alt="Chef Kabir" 
                    className="w-full h-full object-cover grayscale"
                 />

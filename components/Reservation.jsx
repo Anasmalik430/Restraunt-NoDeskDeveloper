@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { MapPin } from 'lucide-react'; // Added MapPin import
+import Image from 'next/image';
 
 const Reservation = () => {
   const [formData, setFormData] = useState({
@@ -25,8 +26,10 @@ const Reservation = () => {
           
           {/* Information & Ambience Side */}
           <div className="w-full lg:w-1/2 relative min-h-[400px]">
-            <img 
+            <Image 
               src="/reservation-banner.webp" 
+              width={1080}
+              height={960}
               alt="Reservation Background"
               className="absolute inset-0 w-full h-full object-cover"
             />

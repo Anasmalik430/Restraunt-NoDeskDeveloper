@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { siteData } from '@/data/siteData';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,8 +49,11 @@ const Menu = () => {
           {siteData.menu.map((dish) => (
             <div key={dish.id} className="menu-card group cursor-pointer">
               <div className="relative aspect-square overflow-hidden rounded-[2.5rem] mb-8 bg-secondary border border-black/5 shadow-premium">
-                <img 
+                <Image 
                   src={dish.image} 
+                  width={1080}
+                  height={960}
+                  loading='lazy'
                   alt={dish.name}
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />

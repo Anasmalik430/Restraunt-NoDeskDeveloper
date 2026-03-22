@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { siteData } from '@/data/siteData';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,8 +52,10 @@ const Featured = () => {
               {/* Image Side */}
               <div className="w-full lg:w-3/5 relative">
                 <div className="relative z-10 aspect-video overflow-hidden rounded-[3rem] shadow-2xl border border-black/5 bg-secondary">
-                  <img 
+                  <Image 
                     src={dish.image} 
+                    width={1080}
+                    height={960}
                     alt={dish.name}
                     className="w-full h-full object-cover transition-transform duration-2000 group-hover:scale-110"
                   />

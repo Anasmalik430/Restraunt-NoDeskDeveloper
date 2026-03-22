@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { siteData } from '@/data/siteData';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,8 +52,10 @@ const Testimonials = () => {
             >
               <div className="flex items-center gap-5 mb-8">
                 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-white ring-4 ring-primary/5">
-                  <img 
+                  <Image 
                     src={review.avatar} 
+                    width={1080}
+                    height={960}
                     alt={review.name} 
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />

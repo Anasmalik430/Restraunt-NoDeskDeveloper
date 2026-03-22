@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { siteData } from '@/data/siteData';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,8 +49,10 @@ const Gallery = () => {
 
           {siteData.gallery.map((img, idx) => (
             <div key={idx} className={`gallery-item relative overflow-hidden rounded-[2.5rem] group ${img.size} shadow-premium border border-black/5`}>
-              <img 
+              <Image 
                 src={img.url} 
+                width={1080}
+                height={960}
                 alt={img.title}
                 className="w-full h-full object-cover scale-[1.1] transition-transform duration-1000 group-hover:scale-[1.2]"
               />

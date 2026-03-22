@@ -5,6 +5,7 @@ import { siteData } from '@/data/siteData';
 import { Utensils, ArrowRight, Star, Clock } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,8 +55,11 @@ const Hero = () => {
       
       {/* Background Layer - Verified Reliability */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <img 
+        <Image 
           src="/hero-banner.webp" 
+          width={1080}
+          height={960}
+          loading="eager"
           alt="Aladdin Signature Interior"
           className="hero-bg-img h-[120%] w-full object-cover -top-[10%] relative origin-top"
         />
