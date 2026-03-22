@@ -33,7 +33,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section id="gallery" ref={galleryRef} className="py-32 pb-6 bg-white px-6">
+    <section id="gallery" ref={galleryRef} className="py-32 pb-4 bg-white px-6">
       <div className="max-w-7xl mx-auto">
        <div className="review-elem max-w-7xl mx-auto px-6 mb-24 text-center">
         <p className="text-primary font-bold tracking-[0.4em] uppercase mb-4 text-[10px]">The Visual Soul</p>
@@ -61,7 +61,7 @@ const Gallery = () => {
         </div>
 
         <div className="mt-20 md:mt-40 flex justify-center">
-           <button className="flex flex-col items-center gap-4 group">
+           <button className="flex flex-col items-center gap-4 group cursor-pointer">
               <span className="text-accent/40 text-[10px] font-bold uppercase tracking-[0.5em] group-hover:text-primary transition-colors">Follow Our Journey</span>
               <div className="w-px h-12 bg-accent/10 group-hover:h-20 group-hover:bg-primary transition-all duration-500" />
            </button>

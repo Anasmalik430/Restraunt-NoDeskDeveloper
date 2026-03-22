@@ -55,7 +55,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="story" ref={sectionRef} className="py-32 bg-secondary/30 px-6">
+    <section id="story" ref={sectionRef} className="py-32 pb-12 bg-secondary/30 px-6">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Imaging Column */}

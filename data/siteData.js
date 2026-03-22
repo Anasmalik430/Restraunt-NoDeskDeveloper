@@ -89,13 +89,13 @@ export const siteData = {
       price: "₹450",
       image: "/dish9.webp"
     },
-    {
-      id: 10,
-      name: "Rose Petal Sorbet",
-      description: "Refreshing palate cleanser with distilled Damask rose water.",
-      price: "₹350",
-      image: "/dish10.webp"
-    }
+    // {
+    //   id: 10,
+    //   name: "Rose Petal Sorbet",
+    //   description: "Refreshing palate cleanser with distilled Damask rose water.",
+    //   price: "₹350",
+    //   image: "/dish10.webp"
+    // }
   ],
   gallery: [
     { url: "/gallery-img1.webp", title: "The Heritage Hall", size: "col-span-2 row-span-2" },

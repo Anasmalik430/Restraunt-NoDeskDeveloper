@@ -36,13 +36,13 @@ const Reservation = () => {
 
             <div className="absolute inset-0 bg-accent/60 backdrop-blur-sm flex flex-col justify-center px-12 md:px-20 text-white">
               <p className="text-primary font-bold tracking-[0.4em] uppercase mb-6 text-[10px]">Private Dining</p>
-              <h2 className="text-4xl md:text-6xl font-serif leading-tight mb-8">
+              <h2 className="text-3xl md:text-5xl font-serif leading-tight mb-4 md:mb-8">
                 Secure Your <br />
                 <span className="italic font-normal">Golden Table</span>
               </h2>
               <div className="space-y-6 text-white/70 text-sm md:text-base font-medium">
                 <p>Enjoy an evening of excellence in our heritage hall or private gold suite.</p>
-                <div className="flex flex-col gap-4 mt-10">
+                <div className="flex flex-col gap-4 mt-0 md:mt-10">
                    <div className="flex items-center gap-4">
                      <div className="w-10 h-px bg-primary" />
                      <span className="tracking-widest uppercase text-[10px]">Open: 12:00 PM - 11:30 PM</span>
@@ -121,12 +121,12 @@ const Reservation = () => {
 
                 <button 
                   type="submit"
-                  className="w-full py-5 bg-accent text-white font-bold uppercase tracking-[0.4em] text-xs hover:bg-primary hover:shadow-2xl transition-all duration-500 rounded-xl mt-4"
+                  className="w-full py-5 bg-accent text-white font-bold uppercase tracking-[0.4em] text-[10px] md:text-xs hover:bg-primary hover:shadow-2xl transition-all duration-500 rounded-xl mt-4"
                 >
                   Secure Reservation
                 </button>
 
-                <p className="text-[9px] text-accent/40 text-center uppercase tracking-widest leading-loose">
+                <p className="text-[10px]  text-accent/40 text-center uppercase tracking-widest leading-loose">
                   By booking, you agree to our heritage reservation policies. <br />
                   A confirmation SMS will be sent shortly.
                 </p>

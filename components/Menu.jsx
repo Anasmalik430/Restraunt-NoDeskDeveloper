@@ -33,7 +33,7 @@ const Menu = () => {
   }, []);
 
   return (
-    <section id="menu" ref={menuRef} className="py-32 bg-white px-6">
+    <section id="menu" ref={menuRef} className="py-32 pb-8 bg-white px-6">
       <div className="max-w-7xl mx-auto">
          <div className="review-elem max-w-7xl mx-auto px-6 mb-24 text-center">
         <p className="text-primary font-bold tracking-[0.4em] uppercase mb-4 text-[10px]">Culinary Masterpieces</p>

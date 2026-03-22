@@ -40,9 +40,9 @@ const ContactInfo = () => {
                <div className="space-y-6">
                  {siteData.brand.openingHours.map((h, i) => (
                     <div key={i} className="flex justify-between items-center group">
-                       <span className="text-accent/40 font-bold uppercase tracking-widest text-[10px] group-hover:text-primary transition-colors">{h.day}</span>
+                       <span className="text-accent/40 font-bold uppercase tracking-widest text-[9px] md:text-xs group-hover:text-primary transition-colors">{h.day}</span>
                        <div className="grow mx-4 border-b border-black/5" />
-                       <span className="text-accent font-medium text-sm">{h.hours}</span>
+                       <span className="text-accent font-medium text-[9px] md:text-xs">{h.hours}</span>
 
                     </div>
                  ))}
@@ -51,12 +51,12 @@ const ContactInfo = () => {
           </div>
 
           {/* Map / Image Side */}
-          <div className="relative group lg:h-[800px]">
+          <div className="relative group h-[250px] lg:h-[800px]">
              <div className="absolute inset-0 bg-primary/10 rounded-[3rem] blur-3xl -z-10 animate-pulse" />
              <div className="h-full w-full rounded-[3rem] overflow-hidden shadow-2xl border border-black/5 relative bg-secondary">
                 {/* Real Interactive Map */}
                 <iframe 
-                   src={siteData.brand.location.mapUrl}
+                   src={siteData?.brand?.location?.mapUrl}
                    width="100%" 
                    height="100%" 
                    style={{ border: 0, filter: 'grayscale(1) contrast(1.2) opacity(0.8)' }} 
@@ -67,7 +67,7 @@ const ContactInfo = () => {
                 />
                 
                 {/* Overlay Info */}
-                <div className="absolute inset-x-12 bottom-12 bg-white/90 backdrop-blur-md p-8 rounded-4xl border border-black/5 shadow-premium flex items-center justify-between group-hover:translate-y-[-10px] transition-transform duration-500">
+                <div className="absolute inset-x-12 bottom-12 bg-white/90 backdrop-blur-md p-8 rounded-4xl border border-black/5 shadow-premium hidden md:flex items-center justify-between group-hover:translate-y-[-10px] transition-transform duration-500">
                    <div>
                       <h5 className="text-accent font-bold text-xs uppercase tracking-widest mb-1">{siteData.brand.name} BISTRO</h5>
                       <p className="text-accent/40 text-[10px] uppercase font-black tracking-widest">Visit us in Roorkee</p>
